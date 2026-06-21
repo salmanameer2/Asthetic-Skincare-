@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-sage-50: #F4F6F5;
+  --color-sage-100: #E5EBE8;
+  --color-sage-200: #D1DDD8;
+  --color-sage-300: #B2C4BC;
+  --color-sage-500: #8DA399; /* Clean Minimalism signature sage */
+  --color-sage-600: #748B81;
+  --color-sage-700: #5C6E66;
+  --color-sage-800: #44514B;
+  --color-sage-900: #1A1A1A; /* Charcoal / Black accent */
+  
+  --color-cream-50: #F7F6F4; /* Primary minimalist background */
+  --color-cream-100: #ECEBE9;
+  --color-cream-200: #E5E4E2; /* Clean minimalism border */
+  --color-cream-300: #DCDAD5;
+}
+
+/* Base style resets and customizations to align with premium clinical style */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: #1A1A1A;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar to match the high-end feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-cream-50);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sage-200);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sage-300);
+}
+
+/* HIGH-CONTRAST DIGITAL CLINICAL DARK THEME OVERRIDES */
+html.dark {
+  --color-cream-50: #090909; /* True minimalist high-contrast clinical black */
+  --color-cream-100: #141414; /* Deep graphite surface mapping */
+  --color-cream-200: #1F1F1F; /* Razor-thin gray clinical border */
+  --color-cream-300: #2C2C2C; /* Active states / controls */
+  
+  --color-sage-50: #121614;
+  --color-sage-100: #1B2420;
+  --color-sage-200: #263830;
+  --color-sage-300: #354E43;
+  --color-sage-500: #9EB2A8; /* Lifted contrast sage for superior element visibility */
+  --color-sage-600: #ADC2B7;
+  --color-sage-700: #C1D5CB;
+  --color-sage-800: #D6E8DE;
+  --color-sage-900: #FAFAF9; /* Solid white accents */
+  
+  color-scheme: dark;
+}
+
+html.dark body {
+  background-color: #090909;
+  color: #E2E1DD;
+}
+
+/* Custom scrollbar adjustments for premium black viewport */
+html.dark ::-webkit-scrollbar-track {
+  background: #090909;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: #1F1F1F;
+}
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #2C2C2C;
+}
+
+/* High-Contrast solid structural adjustments for light/dark swapping */
+html.dark .bg-white {
+  background-color: #121212 !important;
+}
+
+html.dark .bg-white\/95 {
+  background-color: rgba(18, 18, 18, 0.95) !important;
+}
+
+html.dark .bg-white\/90 {
+  background-color: rgba(18, 18, 18, 0.90) !important;
+}
+
+html.dark .text-neutral-900,
+html.dark .text-neutral-950 {
+  color: #FAFAF9 !important;
+}
+
+html.dark .text-neutral-850 {
+  color: #EAE9E6 !important;
+}
+
+html.dark .text-neutral-800 {
+  color: #D8D6D2 !important;
+}
+
+html.dark .text-neutral-750 {
+  color: #CBC9C5 !important;
+}
+
+html.dark .text-neutral-700 {
+  color: #C5C3BF !important;
+}
+
+html.dark .text-neutral-600 {
+  color: #A3A19C !important;
+}
+
+html.dark .text-neutral-500 {
+  color: #8C8A85 !important;
+}
+
+html.dark .text-neutral-400 {
+  color: #716F6B !important;
+}
+
+html.dark .border-cream-200 {
+  border-color: #1F1F1F !important;
+}
+
+html.dark .border-cream-200\/60 {
+  border-color: rgba(31, 31, 31, 0.6) !important;
+}
+
+html.dark .divide-cream-200 > * + * {
+  border-color: #1F1F1F !important;
+}
+
+html.dark .hover\:border-[#1A1A1A]:hover {
+  border-color: #FAFAF9 !important;
+}
+
+html.dark .border-[#1A1A1A] {
+  border-color: #FAFAF9 !important;
+}
+
+html.dark .hover\:text-[#1A1A1A]:hover {
+  color: #FAFAF9 !important;
+}
+
+html.dark .text-[#1A1A1A] {
+  color: #FAFAF9 !important;
+}
+
+html.dark .bg-[#1A1A1A] {
+  background-color: #1E1E1E !important;
+}
+
+html.dark .hover\:bg-white:hover {
+  background-color: #1A1A1A !important;
+}
+
+html.dark .bg-cream-50 {
+  background-color: #090909 !important;
+}
+
+html.dark .bg-cream-100 {
+  background-color: #141414 !important;
+}
+
+

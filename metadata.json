@@ -1,0 +1,6 @@
+{
+  "name": "LEUR Aesthetics",
+  "description": "Premium clinical skincare and medical-aesthetic dermatology practice.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
